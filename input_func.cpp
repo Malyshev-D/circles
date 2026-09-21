@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include "input_func.h"
+#include "circle.h"
+
+
+
 void Correct_Input(int* value)
 {
     int  is_int = 0;
@@ -85,4 +91,10 @@ void Interactive(int* circle, int leng, int radius)
                 break;
         }
     }
+}
+
+void Clear_Input(char* sym)
+{
+    while ((*sym = getchar()) != '\n')
+        continue;
 }
