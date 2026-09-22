@@ -24,7 +24,6 @@ bool Is_In_Circle(int x, int y, int rad)
     return ((x - rad) * (x - rad) + (y - rad) * (y - rad) <= rad * rad + 3);
 }
 
-
 void Circle_Print(int* circle, int rad)
 {
 //TODO: проверка на NULL, if (...)     *assert
@@ -67,7 +66,6 @@ void Circle_Reset(int* circle, int leng)
     for (int idx = 0; idx < leng; idx ++)
         circle[idx] = 0;
 }
-
 
 void Circle_Edit(int* circle, int rad)
 {
